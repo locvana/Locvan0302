@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    @font-face {
+        font-family: 'UTM-Yen-Tu';
+        src: url(./assets/UTM-Yen-Tu.ttf);
+    }
+
+    /* ::-webkit-scrollbar {
+        display: none;
+    } */
+
+    @media screen and (min-width: 1024px) {
+        #scroll-y::-webkit-scrollbar {
+            display: block;
+            width: 3px;
+        }
+    }
+
+    #scroll::-webkit-scrollbar {
+        display: block;
+        height: 2px;
+    }
+
+    #scroll::-webkit-scrollbar-track, #scroll-y::-webkit-scrollbar-track {
+        background: #A8A8A8;
+    }
+
+    #scroll::-webkit-scrollbar-thumb, #scroll-y::-webkit-scrollbar-thumb {
+        background: #F6AA50;
+    }
+    
+    body {
+        background-color: #082723;
+        font-family: "Roboto";
+    }
+}
